@@ -238,7 +238,12 @@ def chat_fn(message, history):
         return f"Error: {e}"
 
 with gr.Blocks(title="Agentic RAG Schedule Assistant") as demo:
-    gr.Markdown("# Agentic RAG Schedule Assistant")
+    gr.Markdown(" Agentic RAG Schedule Assistant")
+    gr.Markdown(
+        "Ask about your schedule (e.g. *'What do I have tomorrow?'*, *'Am I free Friday afternoon?'*) "
+        "or ask me to change it (e.g. *'Add a meeting on August 20 at 3 PM'*, *'Cancel my workshop tomorrow'*). "
+        "Powered by the Google Gemini API with agentic tool calling over a RAG pipeline (ChromaDB + SQLite)."
+    )
     gr.ChatInterface(fn=chat_fn)
 
 if __name__ == "__main__":
