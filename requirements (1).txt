@@ -1,0 +1,5 @@
+google-genai
+chromadb
+pandas
+gradio
+python-dateutil
