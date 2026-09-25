@@ -10,7 +10,7 @@ from google import genai
 from google.genai import types
 import gradio as gr
 
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-3.8-flash"
 EMBEDDING_MODEL = "gemini-embedding-001"
 CURRENT_DATE = date(2026, 8, 15)
 CURRENT_DATE_STR = CURRENT_DATE.isoformat()
