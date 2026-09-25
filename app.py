@@ -239,7 +239,7 @@ def chat_fn(message, history):
 
 with gr.Blocks(title="Agentic RAG Schedule Assistant") as demo:
     gr.Markdown("# Agentic RAG Schedule Assistant")
-    gr.ChatInterface(fn=chat_fn, type="messages")
+    gr.ChatInterface(fn=chat_fn)
 
 if __name__ == "__main__":
     demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
